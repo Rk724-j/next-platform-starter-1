@@ -39,7 +39,37 @@ export default function Page() {
             <section className="flex flex-col gap-4">
                 <Markdown content={preDynamicContentExplainer} />
                 <RandomQuote />
-            </section>
+            </section><div
+  style={{
+    marginTop: "32px",
+    padding: "16px",
+    borderRadius: "16px",
+    border: "1px solid #ddd",
+  }}
+>
+  <img
+    src="IMAGE_URL_HERE"
+    alt="ITEM_NAME_HERE"
+    style={{ width: "100%", maxWidth: "260px", borderRadius: "16px" }}
+  />
+
+  <h2 style={{ marginTop: "12px", fontSize: "20px", fontWeight: "600" }}>
+    ITEM_NAME_HERE
+  </h2>
+
+  <p style={{ marginTop: "4px" }}>Price: PRICE_HERE</p>
+
+  <p style={{ marginTop: "8px" }}>
+    <a
+      href="YOUTUBE_URL_HERE"
+      target="_blank"
+      rel="noreferrer"
+      style={{ color: "#2563eb" }}
+    >
+      Watch YouTube video
+    </a>
+  </p>
+</div>
         </div>
     );
 }
